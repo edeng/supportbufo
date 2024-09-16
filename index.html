@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keep Bufo Alive Support</title>
+    <title>Keep Bufo Alive - Coming Soon</title>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,9 +11,17 @@
             line-height: 1.6;
             color: #ffffff;
             background-color: #1B8484;
-            max-width: 800px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            flex-grow: 1;
             text-align: center;
         }
         h1 {
@@ -24,49 +32,59 @@
             letter-spacing: 2px;
             text-shadow: 3px 3px 0px #0f4c4c;
         }
-        .support-options {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
+        .coming-soon {
+            font-size: 36px;
             margin-top: 40px;
-        }
-        .support-option {
-            text-align: center;
-        }
-        .support-link {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: 400;
-            transition: all 0.3s ease;
-            display: block;
-        }
-        .support-link:hover {
             color: #ffff00;
             text-shadow: 2px 2px 0px #0f4c4c;
-            transform: scale(1.1);
         }
-        .icon {
-            width: 64px;
-            height: 64px;
+        .store-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .store-icon {
+            width: 40px;
+            height: 40px;
+        }
+        footer {
+            background-color: #0f4c4c;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ffff00;
         }
     </style>
 </head>
 <body>
-    <h1>Keep Bufo Alive <br /> SUPPORT</h1>
-    <div class="support-options">
-        <div class="support-option">
-            <a href="mailto:calli@keepbufoalive.com,eden@keepbufoalive.com" class="support-link">
-                <img src="images/mail.png" alt="Email" class="icon">
-                <p>EMAIL SUPPORT</p>
-            </a>
+    <div class="container">
+        <h1>KEEP BUFO ALIVE</h1>
+        <div class="coming-soon">
+            Coming Soon to Google Play & App Store!
         </div>
-        <div class="support-option">
-            <a href="https://discord.gg/3haPX6B2" target="_blank" class="support-link">
-                <img src="images/discord.png" alt="Discord" class="icon">
-                <p>JOIN OUR DISCORD</p>
-            </a>
+        <div class="store-info">
+            <img src="images/app-store-icon.png" alt="App Store" class="store-icon">
+            <img src="images/google-play-icon.png" alt="Google Play" class="store-icon">
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2023 Keep Bufo Alive. All rights reserved.</p>
+        <div>
+            <a href="support.html">Support</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
 </body>
 </html>
